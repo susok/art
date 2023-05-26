@@ -13,7 +13,7 @@
     <body>
 
         <nav class="navbar">
-            <div class="logo">ART Web Dizajn</div>
+            <div class="logo"><img src="img/logo.png" alt=""></div>
             <div class="sandwich">
                 <a href="#" class="sandwich-menu">
                     <div class="sandwich-menu-line"></div>
@@ -25,11 +25,10 @@
                 <li><a href="">Početna</a></li>
                 <li><a href="#usluge">Usluge</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
-                <li><a href="#o-nama" id="link-o-nama">O nama</a></li>
+                <li><a href="#o-nama">O nama</a></li>
             </ul>
         </nav>  
         <script>
-            
             $(document).ready(function() {    
               $('.sandwich-menu').click(function() {
                 $('.nav-menu').toggleClass('open');  
@@ -37,25 +36,26 @@
               });
 
               $('.sandwich').click(function() {
-                $('.nav-menu').slideToggle();
+                $('.nav-menu').slideToggle('open');
                 $(this).toggleClass('open');
               });
-
-              $(window).resize(function() {
+              
+              $(window).on('resize load', function() {
                 if ($(window).width() > 768) {
                   $('.nav-menu').removeAttr('style');
                 } else {
                   $('.nav-menu').hide();
                 }      
-              });
-            });
+              });              
+            });              
+
         </script>
         <header>
             
             <h1>Izrada web stranica</h1>
         </header>
 
-        <main id="main-content">    
+        <main>    
 
             <section id="usluge">
                 <div id="izrada-web-stranica" class="usluge_sec">
@@ -165,7 +165,7 @@
 
         </main>
 
-        <div id="o-nama">
+        <div id="o-nama" class="hide">
             <h2>O NAMA</h2>
             <p>Dobrodošli na našu web stranicu posvećenu izradi web stranica!</p>
             <p>Mi smo stručnjaci za web dizajn i razvoj koji pružaju kvalitetna rješenja za sve vrste klijenata. Bez obzira jeste li mala tvrtka, startup, srednje velika tvrtka ili velika korporacija, naša usluga je prilagođena vašim potrebama.</p>
@@ -174,24 +174,7 @@
             <p>Svaki projekt za nas je jedinstven i posvećujemo pažnju svakom detalju. Slušamo vaše ideje, razumijemo vaše potrebe i zajedno radimo na stvaranju web stranice koja će prenijeti vašu priču i privući posjetitelje.</p>
             <p>Naša podrška ne završava s izradom web stranice. Pružamo vam kontinuiranu podršku i održavanje kako biste osigurali da vaša web stranica uvijek radi besprijekorno i bude ažurirana.</p>
             <p>Ako tražite pouzdanog partnera za izradu web stranica koji će vam pružiti vrhunsku uslugu i podršku, obratite nam se danas. Veselimo se suradnji s vama i stvaranju web stranice koja će vam pomoći postići vaše poslovne ciljeve.</p>                
-        </div>
-        <script>
-            
-            var link = document.getElementById("link-o-nama");
-            var mainContent = document.getElementById("main-content");
-            var oNamaSection = document.getElementById("o-nama");
-            
-
-            oNamaSection.style.display = "none";
-
-            link.addEventListener("click", function(e) {
-              e.preventDefault();
-
-              mainContent.style.display = "none";
-              oNamaSection.style.display = "block";
-            });
-            
-        </script>        
+        </div>    
 
         <footer>
 
