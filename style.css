@@ -172,6 +172,10 @@ footer {
 .logo {
     width: 300px;
 }
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
 .nav-menu {
     width: 400px;
     list-style-type: none;
@@ -237,7 +241,7 @@ footer {
         transition: all 0.3s ease-in-out;
     }
     .sandwich-menu.open .sandwich-menu-line:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg); 
     }
     .sandwich-menu.open .sandwich-menu-line:nth-child(2) {
         opacity: 0;
@@ -422,6 +426,12 @@ footer {
     }
 }
 
+.hide {
+    display: none;
+}
+#o-nama:target {
+    display: block;
+}
 #o-nama {
     width: 80%;
     padding: 30px;
