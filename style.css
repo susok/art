@@ -215,12 +215,11 @@ footer {
 /* Stilovi za prikaz na mobilnim uređajima */
 @media screen and (max-width: 768px) {
     .logo {
-        width: 40%;
+        
         display: flex;
-       
     }
     .sandwich {
-        width: 50%;
+        margin: auto 0; 
         display: flex;
         padding: 10px;
     }
@@ -252,7 +251,7 @@ footer {
     }
     .nav-menu {
         flex-basis: 100%;
-        display: block;
+        display: none;
         text-align: center;
     }
     .nav-menu li {

@@ -14,44 +14,23 @@
 
         <nav class="navbar">
             <div class="logo"><img src="img/logo.png" alt=""></div>
-            <div class="sandwich">
-                <a href="#" class="sandwich-menu">
+            <div class="sandwich" id="sandwich">
+                <a href="#" class="sandwich-menu" id="sandwich-menu">
                     <div class="sandwich-menu-line"></div>
                     <div class="sandwich-menu-line"></div>
                     <div class="sandwich-menu-line"></div>
                 </a>
             </div>           
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="">Početna</a></li>
                 <li><a href="#usluge">Usluge</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
                 <li><a href="#o-nama">O nama</a></li>
             </ul>
         </nav>  
-        <script>
-            $(document).ready(function() {    
-              $('.sandwich-menu').click(function() {
-                $('.nav-menu').toggleClass('open');  
-                $(this).toggleClass('open');
-              });
-
-              $('.sandwich').click(function() {
-                $('.nav-menu').slideToggle('open');
-                $(this).toggleClass('open');
-              });
-              
-              $(window).on('resize load', function() {
-                if ($(window).width() > 768) {
-                  $('.nav-menu').removeAttr('style');
-                } else {
-                  $('.nav-menu').hide();
-                }      
-              });              
-            });              
-
-        </script>
+        
         <header>
-            
+
             <h1>Izrada web stranica</h1>
         </header>
 
@@ -198,36 +177,7 @@
                     <p id="my-form-status"></p>
                 </form>
                 <script>
-                    var form = document.getElementById("my-form");
 
-                    async function handleSubmit(event) {
-                        event.preventDefault();
-                        var status = document.getElementById("my-form-status");
-                        var data = new FormData(event.target);
-                        fetch(event.target.action, {
-                            method: form.method,
-                            body: data,
-                            headers: {
-                                'Accept': 'application/json'
-                            }
-                        }).then(response => {
-                            if (response.ok) {
-                                status.innerHTML = "Poruka je poslata, javit će mo vam se što prije.";
-                                form.reset()
-                            } else {
-                                response.json().then(data => {
-                                    if (Object.hasOwn(data, 'errors')) {
-                                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                                    } else {
-                                        status.innerHTML = "Oops! There was a problem submitting your form"
-                                    }
-                                })
-                            }
-                        }).catch(error => {
-                            status.innerHTML = "Oops! There was a problem submitting your form"
-                        });
-                    }
-                    form.addEventListener("submit", handleSubmit)
                 </script>
             </div> 
 
@@ -253,5 +203,6 @@
                 <p>&copy; <a href="https://artwebdizajn.com/">ART Web Dizajn.</a></p>
             </div>
         </footer>
+        <script src="js/jskod.js"></script>
     </body>
 </html>
