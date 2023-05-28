@@ -5,8 +5,9 @@ var navMenu = document.getElementById("nav-menu");
 var sandwichMenu = document.getElementById("sandwich-menu");
 
 // Dodavanje događaja "click" na prvi element
-sandwich.addEventListener("click", function () {
+sandwich.addEventListener("click", function (event) {
 
+    event.preventDefault();
     // Provjeravanje trenutnog stanja prikaza drugog elementa
     if (navMenu.style.display === "block") {
         // Ako je trenutno prikazan "none", promijeni ga na "block"
@@ -64,3 +65,36 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+
+
+// SLIDES
+window.addEventListener('load', startSlider);
+
+function startSlider() {
+  var slides = document.querySelectorAll('.slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide, 9000);
+
+  function showSlide() {
+    slides[currentSlide].classList.add('active');
+  }
+
+  function hideSlide() {
+    slides[currentSlide].classList.remove('active');
+  }
+
+  function nextSlide() {
+    hideSlide();
+
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide();
+  }
+}
+
+// SLIDES putanja-do-kontakt-forme
+function redirectToContactForm() {
+  window.location.href = "#kontakt";
+}
+
+
