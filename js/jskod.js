@@ -74,7 +74,7 @@ window.addEventListener('load', startSlider);
 function startSlider() {
   var slides = document.querySelectorAll('.slide');
   var currentSlide = 0;
-  var slideInterval = setInterval(nextSlide, 9000);
+  var slideInterval = setInterval(nextSlide, 15000);
 
   function showSlide() {
     slides[currentSlide].classList.add('active');
