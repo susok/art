@@ -178,10 +178,10 @@ footer {
     align-items: center;
 }
 .logo {
-    width: 155px;
+    width: 500px;
 }
 .logo img {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
 }
 .nav-menu {
@@ -271,9 +271,7 @@ footer {
 }
 
 #usluge {
-background-color: #a72fc8;
-    
-    
+    background-color: #a72fc8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -282,7 +280,6 @@ background-color: #a72fc8;
 }
 .usluge_sec {
     padding: 20px;
-   
     background-color: rgba(0, 0, 0, 0.9);
     transition: all 0.3s ease-in-out;
     text-align: center;
@@ -322,15 +319,13 @@ background-color: #a72fc8;
 
 .prednosti {
     background-color: black;
-    
     padding: 50px;
     text-align: center;
-    
 }
 .prednosti h2 {
     margin-bottom: 30px;
     text-transform: uppercase;
-    color: #fff;
+    color: white;
     letter-spacing: 1px;
 }
 .prednosti ul {
@@ -350,7 +345,7 @@ background-color: #a72fc8;
 .prednosti h3 {
 
     margin-bottom: 10px;
-    color: #fff;
+    color: #a72fc8;
     text-transform: uppercase;
 }
 .prednosti p {
@@ -417,7 +412,9 @@ background-color: #a72fc8;
 #kontakt {
     padding: 50px;
     margin-top: 50px;
-    background-color: #f9f6f6;
+    background-color: #a72fc8;
+    background-image: url('img/mail.png');
+    background-size: cover;
 }
 #kontakt h2 {
     text-align: center;
@@ -426,20 +423,19 @@ background-color: #a72fc8;
 }
 #kontakt p {
     text-align: center;
+    transform: skew(-15deg);
     margin-bottom: 40px;
     font-size: 20px;
-    color: black;
 }
 #kontakt form {
     width: 80%;
+    background-color: rgba(0, 0, 0, 0.9);
     margin: 0 auto;
     padding: 50px;
-    border: 1px solid silver;
 }
 #kontakt label {
     font-size: 16px;
     font-weight: bold;
-    color: black;
 }
 #kontakt input, textarea {
     width: 100%;
@@ -448,6 +444,7 @@ background-color: #a72fc8;
     border: 1px solid silver;
     display: block;
     margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 #kontakt textarea {
     height: 150px;
@@ -472,7 +469,7 @@ background-color: #a72fc8;
 }
 @media (max-width: 768px) {
     #kontakt {
-        margin: 30px 5px 5px 5px;
+        margin: 30px 0 5px 0;
         padding: 20px;
     }
     #kontakt h2 {
@@ -537,5 +534,3 @@ background-color: #a72fc8;
     font-size: 19px;
     color: white;
 }
-
-
