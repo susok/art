@@ -271,6 +271,7 @@ footer {
 
 #usluge {
 background-color: #a72fc8;
+    color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-wrap: wrap;
