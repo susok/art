@@ -270,7 +270,7 @@ footer {
 }
 
 #usluge {
-
+background-color: #a72fc8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -279,7 +279,8 @@ footer {
 }
 .usluge_sec {
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
+    background-color: rgba(0, 0, 0, 0.9);
     transition: all 0.3s ease-in-out;
     text-align: center;
     width: 230px;
@@ -316,7 +317,7 @@ footer {
 }
 
 .prednosti {
-    background-color: #a72fc8;
+    background-color: black;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     padding: 50px;
     text-align: center;
