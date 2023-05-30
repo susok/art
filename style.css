@@ -74,7 +74,7 @@ body {
 
 header {
     background-color: #a72fc8;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+   
     width: 80%;
     color: white;
 }
@@ -272,7 +272,7 @@ footer {
 #usluge {
 background-color: #a72fc8;
     
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -321,7 +321,7 @@ background-color: #a72fc8;
 
 .prednosti {
     background-color: black;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    
     padding: 50px;
     text-align: center;
     
@@ -403,10 +403,12 @@ background-color: #a72fc8;
 #o-nama h2 {
     margin-top: 50px;
     margin-bottom: 20px;
+    color: #fff;
 }
 #o-nama p {
     margin-bottom: 20px;
     font-size: 20px;
+    color: #fff;
 }
 
 
