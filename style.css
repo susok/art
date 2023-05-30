@@ -271,7 +271,7 @@ footer {
 
 #usluge {
 background-color: #a72fc8;
-    color: #fff;
+    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-wrap: wrap;
@@ -299,10 +299,11 @@ background-color: #a72fc8;
 }
 .usluge_sec h3 {
     margin-bottom: 10px;
+    color: #fff;
 }
 .usluge_sec p {
     font-size: 16px;
-  
+  color: #fff;
     line-height: 1.5;
 }
 /* Stilovi za mobitel */
