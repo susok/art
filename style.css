@@ -154,8 +154,8 @@ footer {
 }
 .copy-right {
     background-color: #a72fc8;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    border-radius: 100% 0 0 0;
+    box-shadrgba(
+    
     padding: 20px;
     text-align: center;
     font-size: 12px;
