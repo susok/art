@@ -5,7 +5,7 @@ label, input, textarea, button , a, p, section {
     padding: 0;
     font-size: 100%;
     box-sizing: border-box;
-    color: black;
+    color: #fff;
     font-family: "Open Sans", Arial, sans-serif;
 }
 
