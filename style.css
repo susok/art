@@ -115,6 +115,7 @@ main {
 
 footer {
     width: 80%;
+    color: #fff;
 }
 /* Stilovi za prikaz na mobilnim uređajima */
 @media screen and (max-width: 768px) {
