@@ -308,7 +308,7 @@ background-color: #a72fc8;
 /* Stilovi za mobitel */
 @media (max-width: 768px) {
     #usluge {
-        padding: 0;
+        padding: 10px 0 10px 0;
     }
     .usluge_sec {
         width: 100%;
