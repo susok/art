@@ -98,8 +98,12 @@ function redirectToContactForm() {
 }
 
 
-//TRESKAJUCA VIBER IKONA ZA KONTAKT
+//TRESKAJUCE IKONE ZA KONTAKT
 window.addEventListener("load", function() {
   var viberIcon = document.getElementById("viber-icon");
+  var telefonIcon = document.getElementById("telefon-icon");
+  
   viberIcon.classList.add("shake-animation");
+  telefonIcon.classList.add("shake-animation");
 });
+
