@@ -101,9 +101,11 @@ function redirectToContactForm() {
 //TRESKAJUCE IKONE ZA KONTAKT
 window.addEventListener("load", function() {
   var viberIcon = document.getElementById("viber-icon");
+  var whatsappIcon = document.getElementById("whatsapp-icon");
   var telefonIcon = document.getElementById("telefon-icon");
   
   viberIcon.classList.add("shake-animation");
+  whatsappIcon.classList.add("shake-animation");
   telefonIcon.classList.add("shake-animation");
 });
 
