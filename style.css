@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    color: #da92ee;
 }
 
 h1 {
@@ -137,7 +137,7 @@ footer {
     padding: 50px;
 }
 .footeritem {
-    width: 400px;
+    width: 310px;
     flex-direction: column;
     padding: 20px;
 }
@@ -153,21 +153,18 @@ footer {
     margin-bottom: 10px;
     font-size: 16px;
 }
-.copy-right {
-    background-color: #a72fc8;
-    
-    
+.footeritem img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.copy-right {  
     padding: 20px;
     text-align: center;
     font-size: 12px;
     color: white;
 }
-.copy-right p {
-    color: white;
-}
-.copy-right a {
-    color: white;
-}
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -190,6 +187,7 @@ footer {
     justify-content: right;
     display: flex;
     padding: 20px;
+    align-items: center;
 }
 .nav-menu li {
     margin-left: 30px;
@@ -533,4 +531,40 @@ footer {
 .caption p {
     font-size: 19px;
     color: white;
+}
+
+
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#viber-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 9999;
+  animation: shake 1s infinite;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  #viber-icon {
+    display: block;
+  }
 }

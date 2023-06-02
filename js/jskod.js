@@ -98,3 +98,8 @@ function redirectToContactForm() {
 }
 
 
+//TRESKAJUCA VIBER IKONA ZA KONTAKT
+window.addEventListener("load", function() {
+  var viberIcon = document.getElementById("viber-icon");
+  viberIcon.classList.add("shake-animation");
+});
