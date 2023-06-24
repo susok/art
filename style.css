@@ -175,14 +175,14 @@ footer {
     align-items: center;
 }
 .logo {
-    width: 210px;
+    width: 250px;
 }
 .logo img {
     max-width: 200px;
     height: auto;
 }
 .nav-menu {
-    width: 715px;
+    width: 750px;
     list-style-type: none;
     justify-content: right;
     display: flex;
