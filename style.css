@@ -221,13 +221,14 @@ footer {
     .logo {
         margin: auto; 
         display: flex;
-        width: 85%;
+        width: 80%;
         padding: 10px 0 10px 0;
     }
     .sandwich {
         margin: auto 0; 
         display: flex;
         padding: 10px;
+        width: 20%;
     }
     .sandwich-menu {
         margin-left: auto;
