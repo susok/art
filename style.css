@@ -175,7 +175,7 @@ footer {
     align-items: center;
 }
 .logo {
-    width: 250px;
+    width: 230px;
 }
 .logo img {
     max-width: 200px;
@@ -221,7 +221,7 @@ footer {
     .logo {
         margin: auto; 
         display: flex;
-        width: 80%;
+        width: 70%;
         padding: 10px 0 10px 0;
     }
     .sandwich {
